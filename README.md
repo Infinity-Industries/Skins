@@ -8,8 +8,8 @@
 
 | Command | Permission |
 | ------ | ------ |
-| /giveskin <player> <category> <name> | skins.commands.giveskin |
-| /skin <category> <name> | skins.commands.skin |
+| /giveskin player category name | skins.commands.giveskin |
+| /skin category name | skins.commands.skin |
 | /skins | skins.commands.skins |
 | * | skins.commands.* |
 
@@ -18,8 +18,8 @@
 # Permisje & Komendy
 | Komenda | Permisja |
 | ------ | ------ |
-| /giveskin <gracz> <kategoria> <nazwa> | skins.commands.giveskin |
-| /skin <kategoria> <nazwa> | skins.commands.skin |
+| /giveskin gracz kategoria nazwa | skins.commands.giveskin |
+| /skin kategoria nazwa | skins.commands.skin |
 | /skins | skins.commands.skins |
 | * | skins.commands.* |
 
