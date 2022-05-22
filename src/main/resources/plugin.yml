@@ -7,9 +7,13 @@ description: Skins from your resource pack
 
 commands:
   skin:
-
+    usage: /skin <category> <name>
   giveskin:
+    usage: /giveskin <player> <category> <name>
   skins:
+    usage: /skins
+    aliases: 
+      - skiny
 
 permissions:
   skins.commands.skin:
@@ -20,4 +24,11 @@ permissions:
     description: Permission to command /giveskin <player> <category> <name>
   skins.commands.skins:
     default: true
-    description: Permission to command /skin
+    description: Permission to command /skins
+  skins.commands.*:
+    default: op
+    description: Permission to all commands
+    children:
+      skins.commands.skin: true
+      skins.commands.giveskin: true
+      skins.commands.skins: true
