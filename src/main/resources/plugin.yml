@@ -1,0 +1,23 @@
+name: Skins
+version: '${project.version}'
+main: me.nes0x.skins.Skins
+api-version: 1.16
+authors: [ Nes0x ]
+description: Skins from your resource pack
+
+commands:
+  skin:
+
+  giveskin:
+  skins:
+
+permissions:
+  skins.commands.skin:
+    default: op
+    description: Permission to command /skin <category> <name>
+  skins.commands.giveskin:
+    default: op
+    description: Permission to command /giveskin <player> <category> <name>
+  skins.commands.skins:
+    default: true
+    description: Permission to command /skin

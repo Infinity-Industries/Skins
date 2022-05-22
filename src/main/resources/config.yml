@@ -1,0 +1,28 @@
+# <name>:<custom model data>:<category>:<material in gui>
+# WARNING! category must be named with minecraft name materials,
+# e.g. swords materials always ending with "_sword" so category must be named sword
+skins:
+  - 'katana:1:sword:diamond_sword'
+  - 'magic:2:sword:diamond_sword'
+  - 'magic:1:pickaxe:diamond_pickaxe'
+
+resource-pack-url: https://example.com/download/skins.zip
+require-enabled-resource-pack: true
+
+settings:
+  gui-title: '&aYour skins:'
+  gui-rows: 5
+
+messages:
+  skin-set-success: '&aYou put skin on your item in main hand with name %name%.'
+  skin-give-success: '&aYou gave skin with name %name% to %player%.'
+  skin-set-error: '&cYou do not have the item with required category in your hand.'
+  already-have-same-skin: '&cYou already have same skin in your main hand.'
+  skin-received: '&aYou put skin on your item in main hand.'
+  unknown-skin: '&cThis skin is not exists!'
+  unknown-player: '&cThis player did not played before!'
+  console-executor: '&cYou are not player!'
+  invalid-usage: '&cInvalid usage of command!'
+  no-permission: '&cYou do not have permission!'
+  kick-resource-pack: '&cYou must enable server resource pack!'
+  error: '&cError occurred!'

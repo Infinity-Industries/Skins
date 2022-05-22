@@ -1,0 +1,81 @@
+# <nazwa>:<custom model data>:<kategoria>:<item w gui(jak komuś ktoś nada skina)>
+# UWAGA! kategoria musi być nazwana z cząstęczkami nazw minecrafta,
+# np. miecze zawsze kończą się na "_sword" więc kategoria musi nazywać się sword
+skins:
+  - old:1:axe:diamond_axe
+  - big:2:sword:diamond_axe
+  - glitch:3:sword:diamond_axe
+  - banana:1:pickaxe:diamond_pickaxe
+  - big:2:pickaxe:diamond_pickaxe
+  - cyber:3:pickaxe:diamond_pickaxe
+  - fpic:4:pickaxe:diamond_pickaxe
+  - gold:5:pickaxe:diamond_pickaxe
+  - hot_dog:6:pickaxe:diamond_pickaxe
+  - awp:1:bow:bow
+  - captain_america:1:shield:shield
+  - poland:2:shield:shield
+  - ukraine:3:shield:shield
+  - unob:4:shield:shield
+  - unog:5:shield:shield
+  - unor:6:shield:shield
+  - unoy:7:shield:shield
+  - iphone:1:totem:totem_of_undying
+  - lays:2:totem:totem_of_undying
+  - money:3:totem:totem_of_undying
+  - uno:4:totem:totem_of_undying
+  - barbells:1:sword:diamond_sword
+  - bayonet_blue:2:sword:diamond_sword
+  - bayonet_green:3:sword:diamond_sword
+  - bayonet_red:4:sword:diamond_sword
+  - bayonet_yellow:5:sword:diamond_sword
+  - big:6:sword:diamond_sword
+  - broom:7:sword:diamond_sword
+  - bus:8:sword:diamond_sword
+  - cactus:9:sword:diamond_sword
+  - carton:10:sword:diamond_sword
+  - chips:11:sword:diamond_sword
+  - demon_scythe:12:sword:diamond_sword
+  - duck:13:sword:diamond_sword
+  - elder_knife:14:sword:diamond_sword
+  - fortnite:15:sword:diamond_sword
+  - hammer:16:sword:diamond_sword
+  - hammer_second:17:sword:diamond_sword
+  - heart:18:sword:diamond_sword
+  - karambit_blue:19:sword:diamond_sword
+  - karambit_green:20:sword:diamond_sword
+  - katana:21:sword:diamond_sword
+  - katana_cyberpunk:22:sword:diamond_sword
+  - katana_second:23:sword:diamond_sword
+  - knuckle_duster:24:sword:diamond_sword
+  - light:25:sword:diamond_sword
+  - lucky:26:sword:diamond_sword
+  - machete:27:sword:diamond_sword
+  - magic:28:sword:diamond_sword
+  - normal:29:sword:diamond_sword
+  - pala:30:sword:diamond_sword
+  - paper_cutter:31:sword:diamond_sword
+  - samurai:32:sword:diamond_sword
+  - scythe:33:sword:diamond_sword
+  - shadow:34:sword:diamond_sword
+  - skeleton:35:sword:diamond_sword
+  - spoon:36:sword:diamond_sword
+  - thanos:37:sword:diamond_sword
+  - voxel_palette:38:sword:diamond_sword
+resource-pack-url: https://github.com/Infinity-Industries/Skins/raw/main/skins.zip
+require-enabled-resource-pack: true
+settings:
+  gui-title: '&aTwoje skiny:'
+  gui-rows: 5
+messages:
+  skin-set-success: '&aNałożyłeś skina %name% na swój item.'
+  skin-give-success: '&aNadałeś graczowi %player% skina o nazwie %name%.'
+  skin-set-error: '&cNie masz w ręce odpowiedniego itemu.'
+  already-have-same-skin: '&cMasz już nałożony taki sam skin.'
+  skin-received: '&aNałożyłeś skina na swój item.'
+  unknown-skin: '&cTaki skin nie istnieje!'
+  unknown-player: '&cTaki gracz nie grał na serwerze!'
+  console-executor: '&cNie jesteś graczem!'
+  invalid-usage: '&cZłe użycie komendy!'
+  no-permission: '&cNie masz permisji!'
+  kick-resource-pack: '&cMusisz posiadać włączony txt!'
+  error: '&cWystąpił nieoczekiwany błąd!'
