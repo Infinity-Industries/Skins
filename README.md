@@ -1,9 +1,6 @@
 # Tested versions
 `1.16.x`
 
-# Przetestowane wersje
-`1.16.x`
-
 # Permissions & Commands
 
 | Command | Permission |
@@ -13,7 +10,8 @@
 | /skins | skins.commands.skins |
 | * | skins.commands.* |
 
-  
+# Przetestowane wersje
+`1.16.x`
 
 # Permisje & Komendy
 | Komenda | Permisja |
