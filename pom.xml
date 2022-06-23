@@ -6,10 +6,10 @@
 
     <groupId>me.nes0x</groupId>
     <artifactId>Skins</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
-    <name>Skin</name>
+    <name>Skins</name>
 
     <description>Skins from your texturepack</description>
     <properties>

@@ -38,13 +38,13 @@ public class SkinsCommand implements CommandExecutor {
         Player player = (Player) sender;
         if (!player.hasPermission("skins.commands.skins")) {
             player.sendMessage(translateText(config.getString("messages.no-permission")));
-            return false;
+            return true;
         }
 
 
         File playerSkinsFile = SkinUtil.getPlayerSkinsFile(main, player, player);
         if (playerSkinsFile == null) {
-            return false;
+            return true;
         }
 
         YamlConfiguration playerSkins = YamlConfiguration.loadConfiguration(playerSkinsFile);

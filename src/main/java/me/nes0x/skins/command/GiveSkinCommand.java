@@ -41,14 +41,14 @@ public class GiveSkinCommand implements CommandExecutor {
 
         if (player != null && !player.hasPermission("skins.commands.giveskin")) {
             player.sendMessage(translateText(config.getString("messages.no-permission")));
-            return false;
+            return true;
         }
 
         if (args.length != 3) {
             if (player != null) {
                 player.sendMessage(translateText(config.getString("messages.invalid-usage")));
             }
-            return false;
+            return true;
         }
 
         OfflinePlayer target = Bukkit.getOfflinePlayer(args[0]);
@@ -56,12 +56,12 @@ public class GiveSkinCommand implements CommandExecutor {
             if (player != null) {
                 player.sendMessage(translateText(config.getString("messages.unknown-player")));
             }
-            return false;
+            return true;
         }
 
         File targetSkinsFile = SkinUtil.getPlayerSkinsFile(main, target, player);
         if (targetSkinsFile == null) {
-            return false;
+            return true;
         }
         YamlConfiguration targetSkins = YamlConfiguration.loadConfiguration(targetSkinsFile);
 
@@ -88,7 +88,7 @@ public class GiveSkinCommand implements CommandExecutor {
                     if (player != null) {
                         player.sendMessage(translateText(config.getString("messages.error")));
                     }
-                    return false;
+                    return true;
                 }
                 if (player != null) {
                     player.sendMessage(translateText(config.getString("messages.skin-give-success").replace("%name%", skinSplit[0]).replace("%player%", target.getName())));
@@ -101,6 +101,6 @@ public class GiveSkinCommand implements CommandExecutor {
         if (player != null) {
             player.sendMessage(translateText(config.getString("messages.unknown-skin")));
         }
-        return false;
+        return true;
     }
 }

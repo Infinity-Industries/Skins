@@ -26,10 +26,8 @@ public class GiveSkinTabCompleter implements TabCompleter {
         }
 
         if (args.length == 1) {
-
             List<String> players = new ArrayList<>();
             Bukkit.getOnlinePlayers().forEach(player -> players.add(player.getName()));
-
             return StringUtil.copyPartialMatches(args[0], new ArrayList<>(), players);
         } else if (args.length == 2) {
             Set<String> categories = new TreeSet<>();

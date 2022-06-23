@@ -12,9 +12,6 @@ commands:
     usage: /giveskin <player> <category> <name>
   skins:
     usage: /skins
-    aliases: 
-      - skiny
-
 permissions:
   skins.commands.skin:
     default: op

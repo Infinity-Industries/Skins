@@ -32,12 +32,12 @@ public class SkinCommand implements CommandExecutor {
 
         if (!player.hasPermission("skins.commands.skin")) {
             player.sendMessage(translateText(config.getString("messages.no-permission")));
-            return false;
+            return true;
         }
 
         if (args.length != 2) {
             player.sendMessage(translateText(config.getString("messages.invalid-usage")));
-            return false;
+            return true;
         }
 
         for (String skin : config.getStringList("skins")) {
@@ -48,7 +48,7 @@ public class SkinCommand implements CommandExecutor {
                     ItemMeta meta = item.getItemMeta();
                     if (meta.hasCustomModelData() && meta.getCustomModelData() == Integer.parseInt(skinSplit[1])) {
                         player.sendMessage(translateText(config.getString("messages.already-have-same-skin")));
-                        return false;
+                        return true;
                     }
                     meta.setCustomModelData(Integer.parseInt(skinSplit[1]));
                     item.setItemMeta(meta);
@@ -58,7 +58,7 @@ public class SkinCommand implements CommandExecutor {
                     return true;
                 } else {
                     player.sendMessage(translateText(config.getString("messages.skin-set-error")));
-                    return false;
+                    return true;
                 }
             }
         }
